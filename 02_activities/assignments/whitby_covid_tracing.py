@@ -33,7 +33,10 @@ def simulate_event(m):
     that are attributed to weddings.
   """
   # Create DataFrame for people at events with initial infection and traced status
-  events = ['wedding'] * 200 + ['brunch'] * 800
+  brunches = []
+  for i in range(1, 81):
+    brunches = brunches + [f"brunches{i}"] * 10
+  events = ['wedding1'] * 100 + ['wedding2'] * 100 + brunches
   ppl = pd.DataFrame({
       'event': events,
       'infected': False,
@@ -68,7 +71,7 @@ def simulate_event(m):
   return p_wedding_infections, p_wedding_traces
 
 # Run the simulation 1000 times
-results = [simulate_event(m) for m in range(1000)]
+results = [simulate_event(m) for m in range(100)]
 props_df = pd.DataFrame(results, columns=["Infections", "Traces"])
 
 # Plotting the results
