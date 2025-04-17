@@ -40,30 +40,32 @@ For the **Canadian General Social Survey on Giving, Volunteering, and Participat
 
 ## Part A - Survey Design: 
 
-The number of your chosen topic: `#`
+The number of your chosen topic: `1`
 
 Describe the purpose of your survey:
 ```
-write your answer here...
+The purpose of this survey is to understand why entry- and lower-level positions within a tech company appear to be experiencing higher rates of turnover. The HR department hopes that this survey will give them the tools and insights necessary to improve working conditions for entry-level workers and lowering their rates of turnover. This will also benefit the company by reducing the amount of resources spent on having to frequently hire and train new candidates.
 ```
 
 Describe your target population, sampling frame, sampling units, and observational units:
 ```
-write your answer here...
+The target population is all entry-level works at this company. The sampling frame is the subset of workers at this company presented with the survey (this depends on the sampling method chosen). The sampling/observational units are those that respond to the survey.
+
+For this scenario I assume that all departments will have a subset of entry-level workers, so it makes sense to stratify the population by department first, then select entry-level workers at random (stratified random sampling). Entry-level workers can be specifically defined as those working with the company for 1-2 years. The survey will be confidential and anonymous, to ensure that employee answers would not affect their employment status.
 ```
 
 Your 5-10 question survey:
 ```
-1. write your question here...
-2. write your question here...
-3. write your question here...
-4. write your question here...
-5. write your question here...
-6. write your question here... (optional)
-7. write your question here... (optional)
-8. write your question here... (optional)
-9. write your question here... (optional)
-10. write your question here... (optional)
+1. How long have you worked at this company?
+2. What department are you from?
+3. What is your salary range?
+4. Are you satisfied with your salary? 0-not satisfied at all, 5-very satisfied
+5. In the past year, how would you describe your work-life balance? 0-not good, 5-excellent
+6. In the past year, would you say you felt welcome in your department? 0-not at all welcome, 5-very welcome
+7. In the past year, how much guidance or training did you receive from senior department members? 0-no guidance at all, 5-lots of guidance
+8. Do you have any comments on the culture of your department or suggestions on any changes that should be considered?
+9. Do you have any comments or feedback on the guidance or mentorship you have received?
+10. Do you have any comments or concerns about any other aspects of working at our company?
 ```
 
 ## Part B - Survey Evaluation:
@@ -71,7 +73,32 @@ Your 5-10 question survey:
 Identify and describe survey features:
 
 ```
-write your answer here
+1. Sample type: respondents were selected by first mailing a letter to selected households, and then having one randomly selected member from these households (aged 15 or older) complete an online questionnaire. This is a two-stage sampling design where sampling units are households and final stage units are individuals. Stratification was done by province and by geographic regions within each province (the researchers reported 27 different strata).
+
+2. Sample size: the target sample size was 20,000 while the actual number of respondents was 16,149.
+
+3. Target population: Canadians from the ten provinces, aged 15 and above.
+
+4. Sampling frame: the frame consists of households with a telephone number available to Statistics Canada and those on the address register (AR); a list of all dwellings within the ten provinces.
+
+5. Survey mode(s): respondents either filled out an internet questionnaire on their own, or filled one with the assistance of a telephone interviewer.
+
+6. Timeline: conducted from September to December 2018.
+
+7. Response rate: the overall response rate was reported to be 41.9%.
+
+8. Weights: a household weight was calculated and then a person weight using the initial household weight.
+
+9. Data processing: survey responses were electronically recorded for data processing. Researchers describe coding most responses (including write-in questions) if possible. Coding followed standard classification systems used by Statistics Canada and conventions followed by other relevant entities like International Classification of Nonprofit Organizations.
+
+10. Cleaning, imputation, etc: duplicate records, non-response, and out-of-scope records were dropped before further processing. If any respondents did not answer the minimum number of questions, their records were dropped as well. Some missing records were imputed using information from elsewhere in the survey if possible.
+
+11. Sources of error: non-sampling errors can arise from interviewers misunderstanding instructions, respondents misunderstanding questions, transcriptional errors, and processing errors. Sampling errors arise from variability from sample responses and a number of statistical tests (eg., confidence intervals) to estimate how well the sample represented the true population.
+
+12. Limitations, known biases, etc: limitations and biases were not explicitly mentioned in the User Guide. I would theorize that some bias would arise from the nature of respondents; those more likely to take the time and respond to this survey would also be more likely to be the giving/volunteering/participating type. 
+
+13. Link to documentation and any additional sources used: I used the User Guide included in the dataset from abacus: https://abacus.library.ubc.ca/dataset.xhtml?persistentId=hdl:11272.1/AB2/GBFDYG
+
 ```
 
 ## Rubric
